@@ -1,0 +1,99 @@
+.title_1 {
+    margin-top: 80px;
+    color: #212121;
+    text-align: center;
+    font-family: Inter;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 73.6px;
+    /* 120.656% */
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+.kategorii {
+    display: flex;
+    padding: 15px 0 25px 0;
+    padding-left: 15px;
+    justify-content: center;
+    align-items: space-between;
+
+}
+
+.kategorii .list_of_goods {
+    display: flex;
+
+    padding: 15px 0 25px 0;
+    padding-left: 15px;
+    gap: 40px;
+}
+
+
+.kategorii .bags {
+    display: flex;
+    text-align: center;
+    padding: 15px 25px;
+    max-width: 260px;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 7px 29px 10px rgba(230, 158, 35, 0.847);
+}
+
+.kategorii .backpack {
+    display: block;
+    text-align: center;
+    max-width: 260px;
+    padding: 15px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 7px 29px 10px rgba(214, 35, 230, 0.847);
+}
+
+.kategorii .accesuars {
+    display: flex;
+    text-align: center;
+    max-width: 260px;
+    padding-right: 15px;
+    padding: 15px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 7px 29px 10px rgba(61, 35, 230, 0.847);
+}
+
+.otstup {
+    margin: 40px;
+}
+
+.table_of_good {
+    display: flex;
+    width: 1100px;
+    margin-bottom: 100px;
+}
+
+
+.one_card_img {
+    display: fixed;
+    width: 260px;
+    height: 350px;
+    border-radius: 35px;
+    margin: 20px;
+}
+
+
+
+.orange {
+    box-shadow: 0px 7px 20px 10px rgba(230, 158, 35, 0.847);
+}
+
+.purple {
+    box-shadow: 0px 7px 20px 10px rgba(214, 35, 230, 0.847);
+}
+.blue{
+    box-shadow: 0px 7px 20px 10px rgba(61, 35, 230, 0.847);
+}
+.one_card .to_order{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}

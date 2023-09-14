@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css ">
+    <link rel="stylesheet" href="/src/css/style_about_us.css ">
+    <title>О нас</title>
+
+</head>
+
+<body>
+    <dialog class="modal" id="modal">
+        <div class="modal__menu">
+            <p class="modal__title">заполните заявку</p>
+            <button class="modal__btn-close" id="btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                    <path d="M27.7557 18.2441L18.2422 27.7577" stroke="white"
+                        style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M27.7557 27.7577L18.2422 18.2441" stroke="white"
+                        style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path
+                        d="M45 23C45 10.8497 35.1503 1 23 1C10.8497 1 1 10.8497 1 23C1 35.1503 10.8497 45 23 45C35.1503 45 45 35.1503 45 23Z"
+                        stroke="white" style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2" />
+                </svg>
+            </button>
+        </div>
+        <div class="modal__form">
+            <form action="" class="form">
+                <input type="email" class="input" placeholder="Email">
+                <input type="name" class="input" placeholder="Ваше имя">
+                <input type="tel" class="input" placeholder="+7 999 999 99 99">
+                <input type="text" class="input" placeholder="Ваш вопрос">
+                <button class="form__btn">Оставить заявку</button>
+            </form>
+        </div>
+
+    </dialog>
+    <section class="header_warp">
+        <header class="header">
+            <a href="index.html">
+                <img src="./src/img/logo_1.png" alt="" class="logo">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a id="about_us" class="button about_us" href="about_us.html">
+                            <span>о нас</span>
+                        </a></li>
+
+                    <li>
+                        <a id="catalog" class="button catalog" href="catalog.html">
+                            <span>&barvee; каталог</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <button id="contact" class="button contact">
+                            <span>связяться с нами</span>
+                        </button>
+                    </li>
+                    <li>
+                        </a><a id="feedback" class="button feedback" href="feedback.html">
+                            <span>отзывы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button id="login" class="button cart">
+                            <span>Корзина</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <div class="hello">
+        <section class="container">
+            <h1>simply-box</h1>
+            <h2>бренд женских акссесуаров</h2>
+        </section>
+    </div>
+
+    <div class="our_work">
+        <section class="container">
+            <h2 class="what_we_do what_we_do_title">Чем мы занимаемся?</h2>
+            <h3 class="what_we_do what_we_do_subtitle">Наша команда занимается продажей вещей для женщин, девушке и
+                девочек</h3>
+            <p class="what_we_do what_we_do_text">Более года мы увлечены достижением наилучших результатов, которые
+                приносят успех и большую узнаваемость
+                бренда. Мы разрабатываем основную концепцию компании в соответствии с ее целью и создаем стратегии для
+                конкурентного преимущества.</p>
+            <!-- <h3 class="plashka">1321</h3>
+            <p class="plashka">Довольных клиентов по всей России</p>
+            <h3 class="plashka">500+</h3>
+            <p class="plashka">Положительных отзывов и комментариев</p> -->
+            <img class="what_we_do_img" src="src/img/about_us/yellow_card_2.png"
+                alt="1321 Довольных клиентов по всей России 500+ Положительных отзывов и комментариев">
+        </section>
+    </div>
+    <section class="slider">
+        <section class="container">
+            <div class="slider__flex">
+                <div>
+                    <h2 class="slider__title">Плюшевый шоппер</h2>
+                    <p class="slider__subtitle">Плюшевые сумки, бывшие на пике моды десять лет назад, снова актуальны. В
+                        тренде экологичные материалы: мягкий плюш, экомех искусственного происхождения. Для особых,
+                        элегантных образов возможен более изысканный вариант – сумка из натурального меха.</p>
+
+                </div>
+                <div class="slider__box">
+                    <button class="slider__btn slider__btn-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
+                            <path d="M13.2553 0.829741L2.08511 12L13.2553 23.1702" stroke="black"
+                                stroke-width="1.59574" />
+                        </svg>
+                    </button>
+                    <div class="slider__slider">
+                        <img class="slider__img" src="./src/img/about_us/shoppers/1.jpg" alt="">
+                        <img class="slider__img" src="./src/img/about_us/shoppers/2.jpg" alt="">
+                        <img class="slider__img" src="./src/img/about_us/shoppers/3.jpg" alt="">
+                    </div>
+                    <button class="slider__btn slider__btn-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
+                            <path d="M0.74469 23.1703L11.9149 12L0.74469 0.829834" stroke="black"
+                                stroke-width="1.59574" />
+                        </svg>
+                    </button>
+                    
+                </div>
+
+            </div>
+            
+        </section>
+
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrath">
+                <div class="first_part_of_footer">
+                    <img src="src/img/logo.png" alt="">
+                </div>
+                <ul class="ways_of_connection">
+                    <li><a href="#"><img src="src/img/mail.png" alt="mail"></a></li>
+                    <li><a href="https://vk.com/gerasash" target="_blank"><img src="src/img/vk.png" alt="vk"></a></li>
+                    <li><a href="https://t.me/gerasash" target="_blank"><img src="src/img/Telegram.png"
+                                alt="telegram"></a></li>
+                    <li><a href="#"><img src="src/img/Inst.png" alt="instagram"></a></li>
+                    <li><a href="https://www.ozon.ru/seller/simply-box-209480/aksessuary-7697/" target="_blank"><img
+                                src="src/img/Ozon_footer.png" alt="ozon"></a></li>
+                </ul>
+                <div class="second_part_of_footer">
+                    <p>Связаться с нами: <br>
+                        +79167157260
+                        Gera18.01@mail.ru
+                    </p>
+                </div>
+                <div class="third_part_of_footer">
+                    <p class="third_footer_text">Юридический адрес: <br> г. Москва <br>ул. Народного Ополчения, 32 </p>
+                </div>
+                <div class="third_part_of_footer">
+                    <p class="third_footer_text">Физический адрес: <br> г. Москва <br> ул. Красноясркая, 1 </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
