@@ -133,13 +133,76 @@
                                 stroke-width="1.59574" />
                         </svg>
                     </button>
-                    
                 </div>
-
             </div>
-            
         </section>
+    </section>
+    <section>
+        <div class="container">
+            <table class="table">
 
+                <tr>
+                    <th>Товар</th>
+                    <th>Тип</th>
+                    <th>материал</th>
+                    <th>цена</th>
+                    <th>срок доставки</th>
+                </tr>
+
+                <tr>
+                    <td>Sbb-backapack-01</td>
+                    <td>рюкзак</td>
+                    <td>плюш</td>
+                    <td>900руб</td>
+                    <td>3 дня</td>
+                </tr>
+
+                <tr>
+                    <td>Sbb-backapack-04</td>
+                    <td>рюкзак</td>
+                    <td>текстиль</td>
+                    <td>1400руб</td>
+                    <td>2 дня</td>
+                </tr>
+                <tr>
+                    <td>Sbb-backapack-06</td>
+                    <td>рюкзак</td>
+                    <td>текстиль</td>
+                    <td>1500руб</td>
+                    <td>5 дней</td>
+                </tr>
+                <tr>
+                    <td>Sbb-shopper-06-white</td>
+                    <td>сумка</td>
+                    <td>плюш</td>
+                    <td>600руб</td>
+                    <td>10 дней</td>
+                </tr>
+                <tr>
+                    <td>Sbb-shopper-12-white</td>
+                    <td>сумка</td>
+                    <td>пластик</td>
+                    <td>300руб</td>
+                    <td>2 дня</td>
+                    
+                </tr>
+                <tr>
+                    <td>Sbb-cosmeticbag</td>
+                    <td>косметичка</td>
+                    <td>пластик</td>
+                    <td>550руб</td>
+                    <td>7 дней</td>
+                </tr>
+                <tr>
+                    <td>Sbb-jewish</td>
+                    <td>цепочка</td>
+                    <td>металл</td>
+                    <td>1550руб</td>
+                    <td>15 дней</td>
+                </tr>
+            </table>
+
+        </div>
     </section>
     <footer class="footer">
         <div class="container">
@@ -173,14 +236,15 @@
     </footer>
     <section>
         <script>
-            window.addEventListener('scroll',function() {
-                var scroll= document.querySelector('.upward');
-                scroll.classList.toggle("active",window.scrollY>100)
+            window.addEventListener('scroll', function () {
+                var scroll = document.querySelector('.upward');
+                scroll.classList.toggle("active", window.scrollY > 100)
             })
-            function scrollTopTop(){
+
+            function scrollTopTop() {
                 window.scrollTo({
-                    top:0,
-                    behavior:'smooth'
+                    top: 0,
+                    behavior: 'smooth'
                 })
             }
         </script>
