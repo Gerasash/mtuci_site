@@ -11,44 +11,73 @@
     <title>Каталог</title>
 </head>
 <body>
+    <div class="upward" onClick="scrollTopTop()"></div>
+    <dialog class="modal" id="modal">
+        <div class="modal__menu">
+            <p class="modal__title">заполните заявку</p>
+            <button class="modal__btn-close" id="btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                    <path d="M27.7557 18.2441L18.2422 27.7577" stroke="white"
+                        style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M27.7557 27.7577L18.2422 18.2441" stroke="white"
+                        style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path
+                        d="M45 23C45 10.8497 35.1503 1 23 1C10.8497 1 1 10.8497 1 23C1 35.1503 10.8497 45 23 45C35.1503 45 45 35.1503 45 23Z"
+                        stroke="white" style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2" />
+                </svg>
+            </button>
+        </div>
+        <div class="modal__form">
+            <form action="" class="form">
+                <input type="email" class="input" placeholder="Email">
+                <input type="name" class="input" placeholder="Ваше имя">
+                <input type="tel" class="input" placeholder="+7 999 999 99 99">
+                <input type="text" class="input" placeholder="Ваш вопрос">
+                <button class="form__btn">Оставить заявку</button>
+            </form>
+        </div>
+
+    </dialog>
     <section class="header_warp">
-        <header class="header">
-            <a href="index.html">
+        <header>
+            <a href="index.html" class="logo_img">
                 <img src="./src/img/logo_1.png" alt="" class="logo">
             </a>
-            <nav>
+            <nav class="list_of_header">
                 <ul class="menu">
-                    <li><a id="about_us" class="button about_us" href="about_us.html">
+                    <li class="but_of_menu">
+                        <a id="about_us" class="button about_us" href="about_us.html">
                             <span>о нас</span>
-                        </a></li>
-
-                    <li>
+                        </a>
+                    </li>
+                    <li class="but_of_menu dropdown">
                         <a id="catalog" class="button catalog" href="catalog.html">
                             <span>&barvee; каталог</span>
                         </a>
+                        <ul class="dropdown-content">
+                            <li><a href="catalog.html#bags">Шопперы</a></li>
+                            <li><a href="catalog.html#backpack">Рюкзаки</a></li>
+                            <li><a href="catalog.html#stuff">косметички</a></li>
+                        </ul>
                     </li>
 
-                    <li>
+                    <li class="but_of_menu">
                         <button id="contact" class="button contact">
                             <span>связяться с нами</span>
                         </button>
                     </li>
-                    <li>
-                        </a><a id="feedback" class="button feedback" href="feedback.html">
-                            <span>отзывы</span>
+                    <li class="but_of_menu">
+                        <a id="login" class="button cart" href="navigation.html">
+                            <img src="./src/img/sitemap.png" width="50px" alt="">
                         </a>
                     </li>
-                    <li>
-                        <button id="login" class="button cart">
-                            <span>Корзина</span>
-                        </button>
-                    </li>
-
-                    <!-- <li id="cart"><a href="#">корзина</a></li> -->
                 </ul>
             </nav>
         </header>
     </section>
+
 
     <section class="katalog_main">
         <div class="container">
@@ -94,6 +123,11 @@
                         <a href="https://www.ozon.ru/seller/simply-box-209480/sumki-na-plecho-zhenskie-17002/" target="_blank" class="button to_order"><span>Заказать на озон</span></a>
                     </li>
                 </ul>
+
+                <a href="bags.html" class="button to_watch watch_the_catalog">
+                    <span>смотреть весь каталог</span>
+                </a>
+
                 <ul class="table_of_good" id="backpack">
                     <li class="one_card">
                         <img src="src/img/about_us/backpacks/1.jpg" alt="" class="one_card_img purple">
@@ -120,7 +154,9 @@
                         </a>
                     </li>
                 </ul>
-
+                <a href="backpack.html" class="button to_watch watch_the_catalog">
+                    <span>смотреть весь каталог</span>
+                </a>
                 <ul class="table_of_good" id="stuff">
                     <li class="one_card">
                         <img src="src/img/about_us/stuff/1.jpg" alt="" class="one_card_img blue">
@@ -147,7 +183,9 @@
                         </a>
                     </li>
                 </ul>
-
+                <a href="stuff.html" class="button to_watch watch_the_catalog">
+                    <span>смотреть весь каталог</span>
+                </a>
             </div>
             
         </div>
@@ -185,5 +223,20 @@
             </div>
         </div>
     </footer>
+    <section>
+        <script>
+            window.addEventListener('scroll',function() {
+                var scroll= document.querySelector('.upward');
+                scroll.classList.toggle("active",window.scrollY>100)
+            })
+            function scrollTopTop(){
+                window.scrollTo({
+                    top:0,
+                    behavior:'smooth'
+                })
+            }
+        </script>
+    </section>
+    <script src="./src/js/main.js"></script>
 </body>
 </html>

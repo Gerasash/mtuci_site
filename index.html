@@ -11,11 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- для подключения конкретного шрифта и толщины-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <script src="/assets/js/jquery-3.7.0.min.js"></script>
     <meta name="viewport" content="width=1140">
+
 </head>
 
 <body>
+    
+    <div class="upward" onClick="scrollTopTop()"></div>
+
     <dialog class="modal" id="modal">
         <div class="modal__menu">
             <p class="modal__title">заполните заявку</p>
@@ -42,8 +46,8 @@
                 <button class="form__btn">Оставить заявку</button>
             </form>
         </div>
-
     </dialog>
+
     <section class="header_warp">
         <header>
             <a href="index.html" class="logo_img">
@@ -51,43 +55,32 @@
             </a>
             <nav class="list_of_header">
                 <ul class="menu">
-                    <li>
+                    <li class="but_of_menu">
                         <a id="about_us" class="button about_us" href="about_us.html">
                             <span>о нас</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="but_of_menu dropdown">
                         <a id="catalog" class="button catalog" href="catalog.html">
                             <span>&barvee; каталог</span>
                         </a>
-                        <ul class="submenu_goods">
-                            <li><a href="#">Шопперы</a></li>
-                            <li><a href="#">&barvee;Рюкзаки</a>
-                                <ul class="summenu_backpack">
-                                    <li><a href="#">для мальчиков</a></li>
-                                    <li><a href="#">для девочек</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">косметички</a></li>
+                        <ul class="dropdown-content">
+                            <li><a href="catalog.html#bags">Шопперы</a></li>
+                            <li><a href="catalog.html#backpack">Рюкзаки</a></li>
+                            <li><a href="catalog.html#stuff">косметички</a></li>
                         </ul>
                     </li>
 
-                    <li>
+                    <li class="but_of_menu">
                         <button id="contact" class="button contact">
                             <span>связяться с нами</span>
                         </button>
                     </li>
-                    <li>
-                        </a><a id="feedback" class="button feedback" href="feedback.html">
-                            <span>отзывы</span>
+                    <li class="but_of_menu">
+                        <a id="login" class="button cart" href="navigation.html">
+                            <img src="./src/img/sitemap.png" width="50px" alt="">
                         </a>
                     </li>
-                    <li>
-                        <button id="login" class="button cart">
-                            <span>Корзина</span>
-                        </button>
-                    </li>
-                    <!-- <li id="cart"><a href="#">корзина</a></li> -->
                 </ul>
             </nav>
         </header>
@@ -98,11 +91,11 @@
             <div class="main__box">
                 <h1 class="main__title">simply box</h1>
                 <h2 class="main__subtitle">simply for you просто для тебя</h2>
-                <a href="#" class="main__btn">перейти в каталог</a>
+                <a href="catalog.html" class="main__btn">перейти в каталог</a>
             </div>
             <div class="main__reviews">
                 <img src="./src/img/reviews.png" alt="" class="reviews__img">
-                <img src="./src/img/sale.png" alt="" class="main__img">
+                <a href="catalog.html"><img src="./src/img/sale.png" alt="" class="main__img"></a>
             </div>
         </section>
     </div>
@@ -137,7 +130,20 @@
             </div>
         </div>
     </footer>
-
+    <section>
+        <script>
+            window.addEventListener('scroll',function() {
+                var scroll= document.querySelector('.upward');
+                scroll.classList.toggle("active",window.scrollY>100)
+            })
+            function scrollTopTop(){
+                window.scrollTo({
+                    top:0,
+                    behavior:'smooth'
+                })
+            }
+        </script>
+    </section>
     <script src="./src/js/main.js"></script>
 </body>
 
