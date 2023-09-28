@@ -67,13 +67,15 @@ header {
 
   .logo_img {
     width: 50px;
-  }   
-  .logo{
-    width: 50px; 
+  }
+
+  .logo {
+    width: 50px;
     position: absolute;
     margin: -15px;
-    right: 20px; 
+    right: 20px;
   }
+
   .menu {
     display: none;
   }
@@ -733,7 +735,6 @@ dialog {
 }
 
 .upward {
-
   position: fixed;
   bottom: 50px;
   right: 100px;
@@ -760,13 +761,10 @@ dialog {
 @media (max-width: 480px) {
   .hamburger-menu {
     display: block;
+    z-index: 1;
+    background: transparent
   }
-
 }
-
-
-
-
 
 #menu__toggle {
   opacity: 0;
@@ -834,6 +832,7 @@ dialog {
   background-color: #ECEFF1;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
+
 }
 
 .menu__item {

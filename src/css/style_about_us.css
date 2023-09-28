@@ -3,14 +3,23 @@
     padding-top: 400px;
     margin: 0 auto;
     text-align: center;
-    height: 1080px;
+    height: 720px;
 }
 
 .hello h1 {
     font-size: 100px;
     font-weight: 400;
 }
-
+@media (max-width:768px) {
+    .what_we_do_subtitle{
+        font-size:40px;
+    }
+}
+@media (max-width:480px) {
+    .what_we_do_subtitle{
+        font-size:30px;
+    }
+}
 .our_work {
     height: 1080px;
     background: #2E74FF;
@@ -45,15 +54,28 @@
     justify-content: center;
 }
 
-.slider {
-    margin: 50px auto;
+@media (max-width : 767px) {
+    .what_we_do_img{
+        max-width: 600px;
+    }
 }
-
+@media (max-width : 480px) {
+    .what_we_do_img{
+        max-width: 300px;
+    }
+}
 .slider__flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+@media (max-width : 767px) {
+    .slider__flex{
+       flex-direction: column;
+
+    }
+}
+
 
 .slider__title {
     color: #0C0B0B;
