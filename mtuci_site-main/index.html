@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply-box</title>
+    <link rel="stylesheet" href="./src/css/style.css ">
+    <!-- сайт подключается к гуглу для скачивания шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- для подключения конкретного шрифта и толщины-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="/assets/js/jquery-3.7.0.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <!-- 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"> -->
+</head>
+
+<body>
+    <div class="upward" onClick="scrollTopTop()"></div>
+    <dialog class="modal" id="modal">
+        <div class="modal__menu">
+            <p class="modal__title">заполните заявку</p>
+            <button class="modal__btn-close" id="btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                    <path d="M27.7557 18.2441L18.2422 27.7577" stroke="white"
+                        style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M27.7557 27.7577L18.2422 18.2441" stroke="white"
+                        style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path
+                        d="M45 23C45 10.8497 35.1503 1 23 1C10.8497 1 1 10.8497 1 23C1 35.1503 10.8497 45 23 45C35.1503 45 45 35.1503 45 23Z"
+                        stroke="white" style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2" />
+                </svg>
+            </button>
+        </div>
+        <div class="modal__form">
+            <form action="" class="form">
+                <input type="email" class="input" placeholder="Email">
+                <input type="name" class="input" placeholder="Ваше имя">
+                <input type="tel" class="input" placeholder="+7 999 999 99 99">
+                <input type="text" class="input" placeholder="Ваш вопрос">
+                <button class="form__btn">Оставить заявку</button>
+            </form>
+        </div>
+    </dialog>
+
+    <section class="header_warp">
+        <header>
+            <a href="index.html" class="logo_img">
+                <img src="./src/img/logo_1.png" alt="" class="logo">
+            </a>
+
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="index.html">На главную</a></li>
+                    <li><a class="menu__item" href="about_us.html">о компании</a></li>
+                    <li><a class="menu__item" href="catalog.html">каталог</a></li>
+                    <li><a class="menu__item" href="navigation.html">карта сайта</a></li>
+                </ul>
+            </div>
+
+            <nav class="list_of_header">
+                <ul class="menu">
+                    <li class="but_of_menu">
+                        <a id="about_us" class="button about_us" href="about_us.html">
+                            <span>о компании</span>
+                        </a>
+                    </li>
+                    <li class="but_of_menu dropdown">
+                        <a id="catalog" class="button catalog" href="catalog.html">
+                            <span>&barvee; каталог</span>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="catalog.html#bags">Шопперы</a></li>
+                            <li><a href="catalog.html#backpack">Рюкзаки</a></li>
+                            <li><a href="catalog.html#stuff">косметички</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="but_of_menu">
+                        <button id="contact" class="button contact">
+                            <span>связяться с нами</span>
+                        </button>
+                    </li>
+                    <li class="but_of_menu">
+                        <a id="login" class="button cart" href="navigation.html">
+                            <img src="./src/img/sitemap.png" width="50px" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <div class="container">
+        <section class="main">
+            <div class="main__box">
+                <h1 class="main__title">simply box</h1>
+                <h2 class="main__subtitle">simply for you просто для тебя</h2>
+                <a href="catalog.html" class="main__btn">перейти в каталог</a>
+            </div>
+            <div class="main__reviews">
+                <a href="https://vk.com/topic-206092084_47935862">
+                    <img src="./src/img/reviews.png" alt="" class="reviews__img">
+                </a>
+                <a href="catalog.html"><img src="./src/img/sale.png" alt="отзывы" class="main__img"></a>
+            </div>
+        </section>
+    </div>
+
+    <div class="why_choose_us">
+        <div class="container">
+            <h2 class="title_why_choose_us">Почему выбирают нас?</h2>
+            <div class="item">
+                <div class="item_img"><img src="./src/img/why-we-icon-1.svg" alt=""></div>
+                <div class="text_why_choose_us">Вернем деньги, если товар не подойдет или передумаете</div>
+            </div>
+            <div class="item">
+                <div class="item_img"><img src="./src/img/why-we-icon-2.svg" alt=""></div>
+                <div class="text_why_choose_us">Престижные награды и сертификаты качества</div>
+            </div>
+            <div class="item">
+                <div class="item_img"><img src="./src/img/why-we-icon-3.svg" alt=""></div>
+                <div class="text_why_choose_us">Нас оценили более 1000 покупателей</div>
+            </div>
+            <div class="item">
+                <div class="item_img"><img src="./src/img/why-we-icon-4.svg" alt=""></div>
+                <div class="text_why_choose_us">Команда из более чем 50 человек старалась сделать товары лучше</div>
+            </div>
+            <div class="item">
+                <div class="item_img"><img src="./src/img/why-we-icon-5.svg" alt=""></div>
+                <div class="text_why_choose_us">Лучшие материалы и ткани</div>
+            </div>
+        </div>
+    </div>
+    <h2 class="the_location">Где находится наш магазин:</h2>
+    <div class="the_map">
+
+        <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab08c61bdb9003ea178e1eaf8ba91fc7e13532a57624d6fbacd977d02176aa9b4&amp;width=100%25&amp;height=507&amp;lang=ru_RU&amp;scroll=false">
+
+            </script>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrath">
+                <div class="first_part_of_footer">
+                    <img src="src/img/logo.png" alt="">
+                </div>
+                <ul class="ways_of_connection">
+                    <li><a href="#"><img src="src/img/mail.png" alt="mail"></a></li>
+                    <li><a href="https://vk.com/gerasash" target="_blank"><img src="src/img/vk.png" alt="vk"></a></li>
+                    <li><a href="https://t.me/gerasash" target="_blank"><img src="src/img/Telegram.png"
+                                alt="telegram"></a></li>
+                    <li><a href="#"><img src="src/img/Inst.png" alt="instagram"></a></li>
+                    <li><a href="https://www.ozon.ru/seller/simply-box-209480/aksessuary-7697/" target="_blank"><img
+                                src="src/img/Ozon_footer.png" alt="ozon"></a></li>
+                </ul>
+                <div class="second_part_of_footer">
+                    <p>Связаться с нами: <br>
+                        +79167157260
+                        Gera18.01@mail.ru
+                    </p>
+                </div>
+                <div class="third_part_of_footer">
+                    <p class="third_footer_text">Юридический адрес: <br> г. Москва <br>ул. Народного Ополчения, 32 </p>
+                </div>
+                <div class="third_part_of_footer">
+                    <p class="third_footer_text">Физический адрес: <br> г. Москва <br> ул. Красноясркая, 1 </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section>
+        <script>
+            window.addEventListener('scroll', function () {
+                var scroll = document.querySelector('.upward');
+                scroll.classList.toggle("active", window.scrollY > 100)
+            })
+
+            function scrollTopTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
+            }
+        </script>
+    </section>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

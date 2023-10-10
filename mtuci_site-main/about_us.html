@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css ">
+    <link rel="stylesheet" href="./src/css/style_about_us.css ">
+    <title>О нас</title>
+    <meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+    <div class="upward" onClick="scrollTopTop()"></div>
+    <dialog class="modal" id="modal">
+        <div class="modal__menu">
+            <p class="modal__title">заполните заявку</p>
+            <button class="modal__btn-close" id="btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                    <path d="M27.7557 18.2441L18.2422 27.7577" stroke="white"
+                        style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M27.7557 27.7577L18.2422 18.2441" stroke="white"
+                        style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path
+                        d="M45 23C45 10.8497 35.1503 1 23 1C10.8497 1 1 10.8497 1 23C1 35.1503 10.8497 45 23 45C35.1503 45 45 35.1503 45 23Z"
+                        stroke="white" style="stroke: white; stroke: white; stroke-opacity: 1" stroke-width="2" />
+                </svg>
+            </button>
+        </div>
+        <div class="modal__form">
+            <form action="" class="form">
+                <input type="email" class="input" placeholder="Email">
+                <input type="name" class="input" placeholder="Ваше имя">
+                <input type="tel" class="input" placeholder="+7 999 999 99 99">
+                <input type="text" class="input" placeholder="Ваш вопрос">
+                <button class="form__btn">Оставить заявку</button>
+            </form>
+        </div>
+
+    </dialog>
+    <section class="header_warp">
+        <header>
+            <a href="index.html" class="logo_img">
+                <img src="./src/img/logo_1.png" alt="" class="logo">
+            </a>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="index.html">На главную</a></li>
+                    <li><a class="menu__item" href="about_us.html">о компании</a></li>
+                    <li><a class="menu__item" href="catalog.html">каталог</a></li>
+                    <li><a class="menu__item" href="navigation.html">карта сайта</a></li>
+                </ul>
+            </div>
+
+            <nav class="list_of_header">
+                <ul class="menu">
+                    <li class="but_of_menu">
+                        <a id="about_us" class="button about_us" href="about_us.html">
+                            <span>о компании</span>
+                        </a>
+                    </li>
+                    <li class="but_of_menu dropdown">
+                        <a id="catalog" class="button catalog" href="catalog.html">
+                            <span>&barvee; каталог</span>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="catalog.html#bags">Шопперы</a></li>
+                            <li><a href="catalog.html#backpack">Рюкзаки</a></li>
+                            <li><a href="catalog.html#stuff">косметички</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="but_of_menu">
+                        <button id="contact" class="button contact">
+                            <span>связяться с нами</span>
+                        </button>
+                    </li>
+                    <li class="but_of_menu">
+                        <a id="login" class="button cart" href="navigation.html">
+                            <img src="./src/img/sitemap.png" width="50px" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <div class="hello">
+        <section class="container">
+            
+            <h2>Simply-box</h2>
+            <h1>О компании</h1>
+            <h2>Главная/О компании</h2>
+        </section>
+    </div>
+
+    <div class="our_work">
+        <section class="container">
+            <h2 class="what_we_do what_we_do_title">Чем мы занимаемся?</h2>
+            <h3 class="what_we_do what_we_do_subtitle">Наша команда занимается продажей вещей для женщин, девушке и
+                девочек</h3>
+            <p class="what_we_do what_we_do_text">Более года мы увлечены достижением наилучших результатов, которые
+                приносят успех и большую узнаваемость
+                бренда. Мы разрабатываем основную концепцию компании в соответствии с ее целью и создаем стратегии для
+                конкурентного преимущества.</p>
+            <!-- <h3 class="plashka">1321</h3>
+            <p class="plashka">Довольных клиентов по всей России</p>
+            <h3 class="plashka">500+</h3>
+            <p class="plashka">Положительных отзывов и комментариев</p> -->
+            <img class="what_we_do_img" src="src/img/about_us/yellow_card_2.png"
+                alt="1321 Довольных клиентов по всей России 500+ Положительных отзывов и комментариев">
+        </section>
+    </div>
+    <div class="our_team">
+        <div class="container">
+            <div class="our_team_blocks">
+                <div class="module_1">
+                    <div class="module_1_text">
+                        <h2>Наша команда</h2>
+                        <p>Добро пожаловать в нашу команду, занимающуюся созданием бренда одежды для стильных и модных
+                            людей! Мы - энтузиасты моды, дизайна и качества, которые стараются предложить уникальные и
+                            творческие решения для вашего гардероба.
+
+                            Наша команда состоит из талантливых дизайнеров, искусных швей и профессиональных стилистов,
+                            которые работают с любовью и вниманием к каждой детали. Мы стремимся создавать одежду,
+                            которая
+                            не только прекрасно смотрится, но и подчеркивает вашу индивидуальность и стиль.
+
+                            Мы придерживаемся высоких стандартов качества и используем только лучшие материалы для
+                            производства нашей одежды. Каждая модель проходит тщательный процесс разработки и
+                            тестирования,
+                            чтобы гарантировать, что она соответствует нашим высоким стандартам и ожиданиям наших
+                            клиентов.
+
+                            Наша команда также гордится своим профессионализмом и открытым подходом к общению с нашими
+                            клиентами. Мы всегда готовы выслушать ваши пожелания и предложения, чтобы удовлетворить ваши
+                            потребности и создать для вас идеальную одежду.
+
+                            Мы верим, что мода - это не только способ выражения себя, но и источник уверенности и
+                            радости.
+                            Позвольте нашей команде помочь вам создать неповторимый стиль и оставить след в мире моды.
+
+                            Присоединяйтесь к нам и откройте для себя вдохновляющий мир нашего бренда одежды!</p>
+                    </div>
+                    <div>
+                        <img src="/src/img/team.png" alt="Описание картинки" class="module_1_image">
+                    </div>
+                </div>
+                <div class="module_2">
+                    <div class="module_2_text">
+                        <h2>Наши производства</h2>
+                        <p>Мы гордимся представить вам нашу команду, которая с любовью и профессионализмом создает
+                            качественные сумки, рюкзаки и другие текстильные предметы.
+
+                            В наших производствах мы объединяем лучшие традиции ремесленного мастерства с инновационными
+                            технологиями. Каждый предмет, созданный нами, является результатом тщательно продуманного
+                            процесса разработки и высококачественного производства.
+
+                            Наша команда состоит из опытных дизайнеров и мастеров, которые с особой тщательностью
+                            выбирают
+                            материалы для наших изделий. Мы работаем только с прочными и долговечными тканями, которые
+                            подчеркивают красоту и функциональность наших изделий.
+
+                            Мы предлагаем широкий ассортимент сумок, рюкзаков и текстильных предметов, которые отвечают
+                            различным потребностям и стилям. Независимо от того, ищете ли вы элегантную сумку для
+                            работы,
+                            прочный рюкзак для путешествий или уютные текстильные предметы для вашего дома, у нас вы
+                            найдете
+                            то, что ищете.
+
+                            Мы уделяем особое внимание деталям и качеству изготовления. Каждый шов и каждая отделка
+                            проходят
+                            строгий контроль качества, чтобы гарантировать долговечность и надежность наших изделий. Мы
+                            стремимся создавать предметы, которые будут радовать вас долгое время и станут верными
+                            спутниками в вашей повседневной жизни.
+
+                            Мы также гордимся нашими экологическими принципами производства. Мы стремимся использовать
+                            экологически чистые материалы и минимизировать отходы, чтобы снизить наш экологический след.
+                            Мы
+                            верим, что мода и устойчивость могут идти рука об руку.
+
+                            Присоединяйтесь к нам и откройте для себя уникальный мир наших товаров, где качество и стиль
+                            сливаются воедино. Будьте уверены, что каждое изделие, созданное нами, будет отражать вашу
+                            индивидуальность и приносить вам удовольствие.</p>
+                    </div>
+                    <div>
+                        <img src="/src/img/proizvodstvo.jpg" alt="Описание картинки" class="module_2_image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <section class="slider">
+        <section class="container">
+            <div class="slider__flex">
+                <div>
+                    <h2 class="slider__title">Наши товары</h2>
+                    <p class="slider__subtitle">В нашем интернет-магазине вы можете приобрести стильные и качественные сумки: шопперы, косметички и рюкзаки. Сумки-шопперы - это удобные и практичные аксессуары для покупок и повседневного использования. Косметички из прочных материалов идеально подходят для хранения косметики и аксессуаров. Рюкзаки - отличный выбор для активного образа жизни, спорта и путешествий. Все наши товары сочетают в себе стиль, качество и функциональность.</p>
+
+                </div>
+                <div class="slider__box">
+                    <button class="slider__btn slider__btn-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
+                            <path d="M13.2553 0.829741L2.08511 12L13.2553 23.1702" stroke="black"
+                                stroke-width="1.59574" />
+                        </svg>
+                    </button>
+                    <div class="slider__slider">
+                        <img class="slider__img" src="./src/img/about_us/shoppers/1.jpg" alt="">
+                        <img class="slider__img" src="./src/img/about_us/shoppers/2.jpg" alt="">
+                        <img class="slider__img" src="./src/img/about_us/shoppers/3.jpg" alt="">
+                    </div>
+                    <button class="slider__btn slider__btn-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
+                            <path d="M0.74469 23.1703L11.9149 12L0.74469 0.829834" stroke="black"
+                                stroke-width="1.59574" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="header_for_table">Таблица с товарами и сроками доставок</h2>
+            <table class="table">
+                <tr>
+                    <th>Товар</th>
+                    <th>Тип</th>
+                    <th>материал</th>
+                    <th>цена</th>
+                    <th>срок доставки</th>
+                </tr>
+
+                <tr>
+                    <td>Sbb-backapack-01</td>
+                    <td>рюкзак</td>
+                    <td>плюш</td>
+                    <td>900руб</td>
+                    <td>3 дня</td>
+                </tr>
+
+                <tr>
+                    <td>Sbb-backapack-04</td>
+                    <td>рюкзак</td>
+                    <td>текстиль</td>
+                    <td>1400руб</td>
+                    <td>2 дня</td>
+                </tr>
+                <tr>
+                    <td>Sbb-backapack-06</td>
+                    <td>рюкзак</td>
+                    <td>текстиль</td>
+                    <td>1500руб</td>
+                    <td>5 дней</td>
+                </tr>
+                <tr>
+                    <td>Sbb-shopper-06-white</td>
+                    <td>сумка</td>
+                    <td>плюш</td>
+                    <td>600руб</td>
+                    <td>10 дней</td>
+                </tr>
+                <tr>
+                    <td>Sbb-shopper-12-white</td>
+                    <td>сумка</td>
+                    <td>пластик</td>
+                    <td>300руб</td>
+                    <td>2 дня</td>
+                    
+                </tr>
+                <tr>
+                    <td>Sbb-cosmeticbag</td>
+                    <td>косметичка</td>
+                    <td>пластик</td>
+                    <td>550руб</td>
+                    <td>7 дней</td>
+                </tr>
+                <tr>
+                    <td>Sbb-jewish</td>
+                    <td>цепочка</td>
+                    <td>металл</td>
+                    <td>1550руб</td>
+                    <td>15 дней</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrath">
+                <div class="first_part_of_footer">
+                    <img src="src/img/logo.png" alt="">
+                </div>
+                <ul class="ways_of_connection">
+                    <li><a href="#"><img src="src/img/mail.png" alt="mail"></a></li>
+                    <li><a href="https://vk.com/gerasash" target="_blank"><img src="src/img/vk.png" alt="vk"></a></li>
+                    <li><a href="https://t.me/gerasash" target="_blank"><img src="src/img/Telegram.png"
+                                alt="telegram"></a></li>
+                    <li><a href="#"><img src="src/img/Inst.png" alt="instagram"></a></li>
+                    <li><a href="https://www.ozon.ru/seller/simply-box-209480/aksessuary-7697/" target="_blank"><img
+                                src="src/img/Ozon_footer.png" alt="ozon"></a></li>
+                </ul>
+                <div class="second_part_of_footer">
+                    <p>Связаться с нами: <br>
+                        +79167157260
+                        Gera18.01@mail.ru
+                    </p>
+                </div>
+                <div class="third_part_of_footer">
+                    <p class="third_footer_text">Юридический адрес: <br> г. Москва <br>ул. Народного Ополчения, 32 </p>
+                </div>
+                <div class="third_part_of_footer">
+                    <p class="third_footer_text">Физический адрес: <br> г. Москва <br> ул. Красноясркая, 1 </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section>
+        <script>
+            window.addEventListener('scroll', function () {
+                var scroll = document.querySelector('.upward');
+                scroll.classList.toggle("active", window.scrollY > 100)
+            })
+
+            function scrollTopTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
+            }
+        </script>
+    </section>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
