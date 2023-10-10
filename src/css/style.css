@@ -498,24 +498,47 @@ a {
   .main {
     flex-direction: column;
   }
-
   .main__box {
-    /*    max-width: 400px; */
     min-width: 300px;
   }
 }
-
 @media (max-width: 480px) {
   .main {
     flex-direction: column;
   }
-
   .main__box {
-    /*    max-width: 400px; */
     min-width: 200px;
   }
 }
 
+
+.why_choose_us{
+
+}
+.why_choose_us .item{
+  display: flex;
+  margin-bottom: 30px;
+}
+.title_why_choose_us{
+  font-size:4.5vw;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.text_why_choose_us{
+  font-size:3vw;
+  margin: auto 10px;
+}
+.properies_of_our_goods{
+
+}
+@media (max-width:480px) {
+  .title_why_choose_us{
+    font-size:5vw;
+  }
+}
+.properies_of_out_goods{
+
+}
 .main__reviews {}
 
 .reviews__img {
@@ -628,7 +651,7 @@ dialog {
   display: flex;
   align-items: center;
   margin: 20px;
-  max-width: 450px;
+  max-width: 400px;
 
 }
 
@@ -644,21 +667,25 @@ dialog {
 
 @media (max-width: 1140px) {}
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  .module_1 {
+    flex-direction: column;
+  }
+  .module_2 {
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 767px) {
   .module_1 {
     flex-direction: column;
   }
-
   .module_2 {
     flex-direction: column;
   }
-
   .module_1_image {
-    max-width: 500px;
+    max-width: 75vw;
   }
-
   .module_2_image {
     max-width: 400px;
   }
@@ -682,6 +709,13 @@ dialog {
   }
 }
 
+.the_location{
+  font-size: 3vw;
+  text-align: center;
+}
+.the_map{
+  margin: 20px;
+}
 
 
 
@@ -702,13 +736,18 @@ dialog {
 }
 
 
-
+@media (max-width: 991px) {
+  
+  .ways_of_connection {
+    flex-direction: column;
+  }
+} 
 @media (max-width: 767px) {
   .footer_wrath {
     gap: 10px;
     padding: 0 8px 0px 5px;
+    font-size: 2vw;
   }
-
   .ways_of_connection {
     flex-direction: column;
   }
@@ -718,8 +757,8 @@ dialog {
   .footer_wrath {
     flex-direction: column;
     align-items: center;
+    font-size: 4vw;
   }
-
   .ways_of_connection {
     flex-direction: row;
   }
